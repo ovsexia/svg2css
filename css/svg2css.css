@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.aclear:after {content:""; display:block; clear:both;}
+label {font-size:14px; cursor:pointer;}
+.margin {width:1200px; margin:0 auto;}
+.part {padding:20px 0;}
+.pleft, .pright {width:48%;}
+.pleft {float:left;}
+.pright {float:right;}
+.pleft1 {width:20%;}
+.pright1 {width:76%;}
+.xinput {width:200px; height:32px; border:1px solid #ccc; padding:0 8px;}
+.xtext {width:100%; height:280px; box-sizing:border-box; font-size:14px; line-height:20px;}
+.xbutton {width:100%; height:40px; border:1px solid #ccc; font-size:15px;}
+.h0 {font-size:26px; font-weight:bold; padding-bottom:8px;}
+.h1 {font-size:16px; font-weight:bold; padding-bottom:8px;}
+.h2 {font-size:13px; line-height:20px;}
+.h2 a {color:red; text-decoration:underline;}
+.svg {width:200px; height:200px; background-color:#ddd; background-repeat:no-repeat; background-position:center center; background-size:100% 100%;}
+.pernum {font-size:14px; font-weight:bold;}
+.pernum span {color:#1ecc37;}
+.howtoget {font-weight:bold; color:#0000ff; font-size:14px;}
+.howtoget a {color:#1ecc37; text-decoration:underline;}
+.howtoget a:hover {color:#1ecc37; text-decoration:none;}
+.p3 {width:33%; display:inline-block;}
