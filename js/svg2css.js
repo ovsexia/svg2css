@@ -57,8 +57,13 @@
       if(this.color){
         fill = this.color;
       }else{
-        reg = /fill\=\"(\#{0,1}[A-z0-9]*)?\"/;
-        fill = getReg(path[i],reg);
+        reg = /fill\=\"(\#{0,1})([A-z0-9]*)?\"/;
+        fill_arr = path[i].match(reg);
+        if(fill_arr && fill_arr[2]){
+          fill = "%23"+fill_arr[2].toLowerCase();
+        }else{
+          fill = "";
+        }
       }
       path_str += " fill='"+fill+"'";
 
@@ -168,7 +173,7 @@
           match = arr[i].match(/([0-9]*)([A-z]*)([0-9]*)/);
           if(match[1].length>=3){
             match_1 = Number("1."+match[1]);
-            match_1 = match_1.toFixed(1); //保留1位小数
+            match_1 = match_1.toFixed(2); //保留2位小数
             match_1 = match_1.split(".");
             num1 = match_1[1];
           }else{
