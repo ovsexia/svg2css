@@ -29,7 +29,7 @@
 
     //去除无用信息 p-id
     code = code.replace(/p\-id\=\"[0-9]*\"/g,'');
-    
+
     //把单引号转换为双引号
     code = code.replace(/\'/g,'"');
 
@@ -65,6 +65,7 @@
           fill = "";
         }
       }
+      fill = fill.replace("#", "%23");
       path_str += " fill='"+fill+"'";
 
       path_str += "/";
